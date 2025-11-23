@@ -15,3 +15,6 @@
     ->touch server.js
 6. TO  RUN THE SERVER.JS NAAY DUHA KA COMMMAND 
 ->node server.js or npm run server
+
+commonjs - para sa script sa node server.js 
+module - para sa npm run server
