@@ -20,4 +20,7 @@
     module - para sa npm run server
 
 7. INSTALL NODEMON PACKAGE PARA DYNAMIC CHANGES OR  MURAG  HOT RELOAD MODULE (HRM)
-    ->npm install nodemon -D
+    ->npm install nodemon -D 
+
+8. INSTALL MONGOOSE FOR CONNECTION FROM MONGODB CONNECTION TO LOCAL
+    -> npm i mongoose@7.0.3
