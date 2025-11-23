@@ -13,3 +13,5 @@
     ->npm install express@4.18.2
 5. CREATE A server.js in BACKEND folders 
     ->touch server.js
+6. TO  RUN THE SERVER.JS NAAY DUHA KA COMMMAND 
+->node server.js or npm run server
