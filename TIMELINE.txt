@@ -11,3 +11,5 @@
     ->npm init -y
 4. ISNTALL EXPRESSJS FRAMEWORK FOR ROUTING, MIDDLEWARE AND MORE HEHE 
     ->npm install express@4.18.2
+5. CREATE A server.js in BACKEND folders 
+    ->touch server.js
