@@ -6,3 +6,6 @@
     ->git add -f backend 
     ->git add -f frontend
     ->git push
+
+3. GO TO BACKEND AND type this command to create package.json for NODEJS
+    ->npm init -y
