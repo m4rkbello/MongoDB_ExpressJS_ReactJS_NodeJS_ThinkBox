@@ -1,1 +1,7 @@
-1. INSTALL NODEJS ADED
+1. INSTALL NODEJS ADED 
+2. C0DE TO RESTORE THE FILE 
+    ->git add .
+    ->$ git commit -m "Add backend and frontend folders"
+    ->git push 
+    ->git add -f backend 
+    ->git add -f frontend
