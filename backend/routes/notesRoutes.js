@@ -4,10 +4,13 @@ const router =  express.Router();
 
 //fecth notes
 router.get("/", getAllNotes);
+
 //add notes
-router.get("/", addNote);
+router.post("/", addNote);
+
 //uppdate notes
 router.put("/:id", updateNote);
+
 //delete notes
 router.delete("/:id", deleteNote);
 
