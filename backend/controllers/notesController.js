@@ -36,7 +36,10 @@ export async function addNote(req, res) {
 
 //EDIT
 export async function updateNote(req, res) {
-    res.status(200).json({message: "Note updated successfully!"});
+
+    
+
+    // res.status(200).json({message: "Note updated successfully!"});
 };
 
 //DELETE
