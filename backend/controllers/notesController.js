@@ -37,7 +37,18 @@ export async function addNote(req, res) {
 //EDIT
 export async function updateNote(req, res) {
 
-    
+    try{
+        
+        const {title, content} = req.body
+        await Note.findByIdAndUpdate(req.params.id,{title,content})
+        res.status(200).json({message:"Note updated successfully!"})
+
+    }catch(error){
+
+        console.error("Error in getAllNotes controller", error);
+        res.status(500).json({message:"Error on get all notes!"})
+
+    }
 
     // res.status(200).json({message: "Note updated successfully!"});
 };
