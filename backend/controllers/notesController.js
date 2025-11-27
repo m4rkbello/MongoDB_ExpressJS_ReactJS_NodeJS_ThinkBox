@@ -36,22 +36,26 @@ export async function addNote(req, res) {
 
 //EDIT
 export async function updateNote(req, res) {
+  try {
+    const { title, content } = req.body;
 
-    try{
-        
-        const {title, content} = req.body
-        await Note.findByIdAndUpdate(req.params.id,{title,content})
-        res.status(200).json({message:"Note updated successfully!"})
+    const updatedNote = await Note.findByIdAndUpdate(
+      req.params.id,
+      { title, content },
+      { new: true }
+    );
 
-    }catch(error){
-
-        console.error("Error in getAllNotes controller", error);
-        res.status(500).json({message:"Error on get all notes!"})
-
+    if (!updatedNote) {
+      return res.status(404).json({ message: "Note not found!" });
     }
 
-    // res.status(200).json({message: "Note updated successfully!"});
-};
+    res.status(200).json(updatedNote);
+  } catch (error) {
+    console.error("Error in updateNote controller:", error);
+    res.status(500).json({ message: "Error updating note!" });
+  }
+}
+
 
 //DELETE
 export async function deleteNote(req, res) {
