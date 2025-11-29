@@ -1,7 +1,7 @@
 
 import Note from "../models/Note.js";
 
-//fetch all notes data
+//FETCH NOTES
 export async function getAllNotes(req, res) {
 
     try{
@@ -13,7 +13,7 @@ export async function getAllNotes(req, res) {
     }
 };
 
-//ADD
+//ADD NOTE
 export async function addNote(req, res) {
 
     try{
@@ -34,7 +34,7 @@ export async function addNote(req, res) {
     res.status(201).json({message: "Note created successfully!"});
 };
 
-//EDIT
+//EDIT NOTE
 export async function updateNote(req, res) {
   try {
     const { title, content } = req.body;
@@ -56,8 +56,24 @@ export async function updateNote(req, res) {
   }
 }
 
-
-//DELETE
+//DELETE NOTE
 export async function deleteNote(req, res) {
-    res.status(200).json({message: "Note deleted successfully!"});
+
+    try {
+
+      const deletedNote = await Note.findByIdAndDelete(
+        req.params.id,
+      );
+
+      if (!deletedNote) {
+        return res.status(404).json({ message: "Note not found!" });
+      }
+
+    res.status(201).json({message:"Note deleted successfully!"});
+  } catch (error) {
+
+      console.error("Error in deleting controller:", error);
+      res.status(500).json({ message: "Error deleting note!" });
+
+  }
 };
