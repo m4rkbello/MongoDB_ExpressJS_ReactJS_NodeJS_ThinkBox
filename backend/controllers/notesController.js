@@ -13,6 +13,15 @@ export async function getAllNotes(req, res) {
     }
 };
 
+//FETCH  SPECIFIC NOTE
+export async function getNoteById(req, res) {
+  try{
+
+  }catch(error){
+
+  }
+}
+
 //ADD NOTE
 export async function addNote(req, res) {
 
@@ -69,7 +78,7 @@ export async function deleteNote(req, res) {
         return res.status(404).json({ message: "Note not found!" });
       }
 
-    res.status(201).json({message:"Note deleted successfully!"});
+    res.status(200).json({message:"Note deleted successfully!"});
   } catch (error) {
 
       console.error("Error in deleting controller:", error);
