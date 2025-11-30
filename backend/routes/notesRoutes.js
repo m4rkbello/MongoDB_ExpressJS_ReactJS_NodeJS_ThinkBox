@@ -2,8 +2,11 @@ import express from "express"
 import { getAllNotes, addNote, updateNote, deleteNote } from "../controllers/notesController.js";
 const router =  express.Router();
 
-//fecth notes
+//fecth all notes
 router.get("/", getAllNotes);
+
+//fecth specific notes
+router.get("/:id", getNoteById);
 
 //add notes
 router.post("/", addNote);
