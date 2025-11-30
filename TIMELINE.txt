@@ -37,4 +37,12 @@
 //CREATING FRONTEND
 GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend 
 
-1.npm create vite@latest .
+1.CREATE A REACT USING VITE BUNDLER
+    ->npm create vite@latest .
+
+2. INSTALL THE NPM
+    ->npm i
+3. INSTALL REACT-ROUTER 
+    ->npm i react-router or npm i react-router-dom 
+4. INSTALL FOR NOTIFICATION OR TOASTER 
+    ->npm i react-hot-toast
