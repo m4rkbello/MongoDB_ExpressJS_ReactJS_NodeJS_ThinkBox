@@ -3,9 +3,8 @@ import Note from "../models/Note.js";
 
 //FETCH NOTES
 export async function getAllNotes(req, res) {
-
     try{
-        const notes = await Note.find();
+        const notes = await Note.find().sort({ createdAt: -1 });
         res.status(200).json(notes);
     }catch(error){
         console.error("Error in getAllNotes controller", error);
