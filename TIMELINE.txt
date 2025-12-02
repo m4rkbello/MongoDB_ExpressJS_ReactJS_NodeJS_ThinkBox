@@ -47,6 +47,26 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
 4. INSTALL FOR NOTIFICATION OR TOASTER 
     ->npm i react-hot-toast
 
+5. INSTALL TAILWINDCSS WITH THE FRAMEWORK OF VITE
+    ->npm install -D tailwindcss@3 postcss autoprefixer
+    ->npx tailwindcss init -p
 
+6. IT CREATES TAILWINDCONFIG.JS AND COPY THIS 
+    /** @type {import('tailwindcss').Config} */
+    export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+    }
+
+7. THEN GO TO INDEX.CSS AND COPY THIS 
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
     STOP VIEW AT 01:50:01
