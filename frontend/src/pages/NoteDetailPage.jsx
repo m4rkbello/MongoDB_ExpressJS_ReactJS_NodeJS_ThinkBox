@@ -8,4 +8,4 @@ const NoteDetailPage = () => {
   )
 }
 
-export default NoteDetailPage
+export default NoteDetailPage;

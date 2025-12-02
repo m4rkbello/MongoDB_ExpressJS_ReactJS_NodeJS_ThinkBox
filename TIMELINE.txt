@@ -46,3 +46,7 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
     ->npm i react-router or npm i react-router-dom 
 4. INSTALL FOR NOTIFICATION OR TOASTER 
     ->npm i react-hot-toast
+
+
+
+    STOP VIEW AT 01:50:01
