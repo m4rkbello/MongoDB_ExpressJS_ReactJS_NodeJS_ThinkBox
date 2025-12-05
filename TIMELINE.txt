@@ -72,4 +72,8 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
     @tailwind utilities;
 
 
-8.
+8. FOR THE ICONS USE LUCIDE-REACT 
+->npm i lucid-react
+
+9.FOR HTTP-REQUEST USE AXIOS 
+->npm i axios
