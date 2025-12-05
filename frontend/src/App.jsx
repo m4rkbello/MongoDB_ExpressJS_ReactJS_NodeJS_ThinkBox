@@ -17,6 +17,8 @@ const App = () => {
 <button className="btn btn-warning">Warning</button>
 <button className="btn btn-error">Error</button>
 
+<h1 class="text-4xl font-bold text-red-500">Tailwind Working?</h1>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
