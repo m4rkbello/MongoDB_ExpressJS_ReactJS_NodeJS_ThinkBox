@@ -50,6 +50,9 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
     ->npm install -D tailwindcss@3 postcss autoprefixer
     ->npx tailwindcss init -p
 
+6. INSTALL THE TAILWIINDCSS FRAMEWORK STYLE "DAISYUI"
+    ->npm install daisyui@14.12.24
+
 6. IT CREATES TAILWINDCONFIG.JS AND COPY THIS 
     /** @type {import('tailwindcss').Config} */
     export default {
