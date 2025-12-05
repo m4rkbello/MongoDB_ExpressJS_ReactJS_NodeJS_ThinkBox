@@ -76,4 +76,7 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
 ->npm i lucid-react
 
 9.FOR HTTP-REQUEST USE AXIOS 
-->npm i axios
+->npm i axios 
+
+10. INSTALL CORS (CROSS ORIGIN RESOURCE SHARING) TO THE BACKEND FOLDER as www/laragon/web_development/mern_think/backend
+->npm i cors
