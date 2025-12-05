@@ -43,7 +43,7 @@ export async function addNote(req, res) {
 
         console.error("Error in getAllNotes controller", error);
         res.status(500).json({message:"Error on get all notes!"})
-
+        
     }
 
     res.status(201).json({message: "Note created successfully!"});

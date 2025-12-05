@@ -33,7 +33,6 @@
 
 
 
-
 //CREATING FRONTEND
 GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend 
 
@@ -69,4 +68,5 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
     @tailwind components;
     @tailwind utilities;
 
-    STOP VIEW AT 01:50:01
+
+8.
