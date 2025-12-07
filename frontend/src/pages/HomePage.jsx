@@ -5,6 +5,9 @@ import RateLimitedUI from '../components/RateLimitedUI';
 import { useEffect } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import NoteCard from '../components/NoteCard';
+
+
 
 
 const HomePage = () => {
@@ -55,10 +58,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/** DISPLAY THE NOTE */}
             {notes.map((note) => (
-              <div key={note._id} className="border border-gray-300 rounded-lg p-4 shadow hover:shadow-lg transition">
-                <h2 className="text-xl font-semibold mb-2">{note.title}</h2>
-                <p className="text-gray-700">{note.content}</p>
-              </div>
+              <NoteCard key={note._id} note={note} />
             ))}
           </div>
         )}
