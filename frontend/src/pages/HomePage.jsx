@@ -8,8 +8,6 @@ import toast from 'react-hot-toast';
 import NoteCard from '../components/NoteCard';
 
 
-
-
 const HomePage = () => {
 
   const [isRateLimited, setIsRateLimited] = useState(false);
