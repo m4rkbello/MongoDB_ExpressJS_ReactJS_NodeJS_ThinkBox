@@ -20,7 +20,6 @@ const HomePage = () => {
         try {
 
           const res = await api.get('/notes');
-          console.log("Fetched notes:", res.data);
 
           setNotes(res.data);
           setIsRateLimited(false);
