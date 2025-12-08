@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import NoteCard from '../components/NoteCard';
+import api from '../lib/axios';
+
 
 
 const HomePage = () => {
@@ -19,7 +21,7 @@ const HomePage = () => {
       const fetchNotes = async () => {
         try {
 
-          const res = await axios.get('http://localhost:5001/api/notes');
+          const res = await api.get('/notes');
           console.log("Fetched notes:", res.data);
 
           setNotes(res.data);
