@@ -1,0 +1,21 @@
+{
+  "name": "mern_thinkbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4rkbello/MongoDB_ExpressJS_ReactJS_NodeJS_ThinkBox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/m4rkbello/MongoDB_ExpressJS_ReactJS_NodeJS_ThinkBox/issues"
+  },
+  "homepage": "https://github.com/m4rkbello/MongoDB_ExpressJS_ReactJS_NodeJS_ThinkBox#readme"
+}
