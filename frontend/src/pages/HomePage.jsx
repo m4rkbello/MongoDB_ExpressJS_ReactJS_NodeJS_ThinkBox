@@ -3,11 +3,9 @@ import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import RateLimitedUI from '../components/RateLimitedUI';
 import { useEffect } from 'react';
-import axios from 'axios';
 import toast from 'react-hot-toast';
 import NoteCard from '../components/NoteCard';
 import api from '../lib/axios';
-
 
 
 const HomePage = () => {
