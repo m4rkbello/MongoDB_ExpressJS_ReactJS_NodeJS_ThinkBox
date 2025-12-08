@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import NoteCard from '../components/NoteCard';
 import api from '../lib/axios';
-
+import NotesNotFound from '../components/NoteNotFound';
 
 const HomePage = () => {
 
@@ -48,6 +48,8 @@ const HomePage = () => {
       <Navbar />
 
       {isRateLimited && <RateLimitedUI />}
+
+      {notes.length === 0 && !isRateLimited && <NotesNotFound />}
 
       <div className="max-w-7xl mx-auto p-4 mt-6">
         { loading && 
