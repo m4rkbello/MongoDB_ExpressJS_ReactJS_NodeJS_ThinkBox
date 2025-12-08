@@ -80,3 +80,11 @@ GO TO cd c:/laragon/www/web_development/mern_thinkbox/frontend
 
 10. INSTALL CORS (CROSS ORIGIN RESOURCE SHARING) TO THE BACKEND FOLDER as www/laragon/web_development/mern_think/backend
 ->npm i cors
+
+11. BUILD THE FRONTEND, BACKEND WITH NEW MODULES ADDED AS 
+root folder > npm run build as 
+ "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+
+12. THEN IT CREATE AND OPTIMIZE THE FILE OF THE FRONTEND AND A FOLDER NAME AS DIST 
