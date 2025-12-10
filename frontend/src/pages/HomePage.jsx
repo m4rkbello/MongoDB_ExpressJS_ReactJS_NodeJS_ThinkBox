@@ -52,11 +52,11 @@ const HomePage = () => {
 
       <div className="max-w-7xl mx-auto p-4 mt-6">
         { loading && 
-          <div className="flex w-52 flex-col gap-4">
-            <div className="skeleton h-32 w-full"></div>
-            <div className="skeleton h-4 w-28"></div>
-            <div className="skeleton h-4 w-full"></div>
-            <div className="skeleton h-4 w-full"></div>
+          <div className="flex w-full h-full flex-col gap-4">
+            <div className="skeleton h-64 w-full"></div>
+            <div className="skeleton h-6 w-full"></div>
+            <div className="skeleton h-6 w-full"></div>
+            <div className="skeleton h-6 w-full"></div>
           </div>
         }
         {notes.length > 0 && !isRateLimited && (
